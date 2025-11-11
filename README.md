@@ -1,73 +1,58 @@
-# React + TypeScript + Vite
+# 🌸 Cancer Awareness & Support Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and compassionate web page built with **React + TypeScript + Tailwind CSS** to spread **cancer awareness, support, and hope**.  
+The project aims to educate, inspire, and connect individuals through awareness and community involvement.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## React Compiler
+✅ **Hero Section** – Inspiring message with a beautiful banner and gradient theme  
+✅ **Contact Form** – Allows visitors to get in touch (frontend only)  
+✅ **Responsive Design** – Looks perfect on all devices  
+✅ **Modern UI** – Built with Tailwind CSS and Google Fonts  
+✅ **Smooth User Experience** – Clean typography, spacing, and visual balance
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Category       | Tools                                  |
+| -------------- | -------------------------------------- |
+| **Frontend**   | React, TypeScript                      |
+| **Styling**    | Tailwind CSS, Google Fonts             |
+| **Build Tool** | Vite / Create React App (choose yours) |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🚀 Getting Started
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 1️⃣ Clone the repository
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+git clone https://github.com/your-username/cancer-awareness-support.git
+cd cancer-awareness-support
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2️⃣ Install dependencies
+
+npm install
+3️⃣ Run the development server
+
+
+npm run dev
+
+Then open http://localhost:5173 in your browser.
+
+🖼️ Project Structure
+
+src/
+ ├─ components/
+ │   ├─ Hero.tsx
+ │   ├─ Quotes.tsx
+ │   ├─ ContactForm.tsx
+ │   └─ Footer.tsx
+ ├─ App.tsx
+ └─ main.tsx
 ```
