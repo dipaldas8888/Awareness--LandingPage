@@ -31,15 +31,15 @@ The project aims to educate, inspire, and connect individuals through awareness 
 
 ### 1️⃣ Clone the repository
 
-```bash
 git clone https://github.com/your-username/cancer-awareness-support.git
+
 cd cancer-awareness-support
 
 2️⃣ Install dependencies
 
 npm install
-3️⃣ Run the development server
 
+3️⃣ Run the development server
 
 npm run dev
 
@@ -48,11 +48,13 @@ Then open http://localhost:5173 in your browser.
 🖼️ Project Structure
 
 src/
- ├─ components/
- │   ├─ Hero.tsx
- │   ├─ Quotes.tsx
- │   ├─ ContactForm.tsx
- │   └─ Footer.tsx
- ├─ App.tsx
- └─ main.tsx
+├─ components/
+│ ├─ Hero.tsx
+│ ├─ ContactForm.tsx
+│ └─ Footer.tsx
+├─ App.tsx
+└─ main.tsx
+
+```
+
 ```
